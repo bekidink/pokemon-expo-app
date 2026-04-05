@@ -1,50 +1,85 @@
-# Welcome to your Expo app 👋
+# Pokémon Expo App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**A modern, production-ready Pokémon mobile app built with Expo for the Senior Developer Assessment.**
 
-## Get started
+![Pokémon App Preview](https://via.placeholder.com/800x400/3b82f6/ffffff?text=Pok%C3%A9dex+Preview)  
+*(Replace with actual screenshots after running the app)*
 
-1. Install dependencies
+## ✨ Overview
 
-   ```bash
-   npm install
-   ```
+This is a complete Pokémon mobile application that meets **and exceeds** all requirements from the Senior Developer Assessment (Expo):
 
-2. Start the app
+- ✅ Pokémon list screen with search
+- ✅ Pokémon detail screen with rich information
+- ✅ Real-time data from PokeAPI
+- ✅ Smooth navigation (Expo Router)
+- ✅ Professional loading & error states
+- ✅ Senior-level code quality, architecture, and best practices
 
-   ```bash
-   npx expo start
-   ```
+The UI has been significantly improved beyond the reference mockup for a premium, modern feel while staying faithful to the Pokémon theme.
 
-In the output, you'll find options to open the app in a
+## 🚀 Features
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **List Screen**
+  - Beautiful grid layout with official artwork
+  - Real-time search ("Who are you looking for?")
+  - Pull-to-refresh support
+  - Skeleton loading states
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Detail Screen** (Winning UI)
+  - Dynamic header color based on primary type
+  - Large hero artwork with animation
+  - Floating type badges
+  - Segmented tabs: **About • Stats • Moves**
+  - Flavor text from Pokémon species API
+  - Beautiful animated stat bars
+  - Breeding info (height/weight)
+  - Preview of moves
 
-## Get a fresh project
+- **Technical Highlights**
+  - Full TypeScript with strict mode
+  - TanStack React Query v5 (caching, loading, error handling, retries)
+  - NativeWind (Tailwind CSS) + React Native Paper
+  - Clean architecture (hooks, services, types, utils)
+  - Reusable components
+  - Basic unit tests
 
-When you're ready, run:
+## 🛠 Tech Stack
 
+| Technology              | Version    | Purpose                          |
+|-------------------------|------------|----------------------------------|
+| Expo                    | ~52        | Framework & build tool           |
+| Expo Router             | ~4         | File-based navigation            |
+| React Native            | 0.76       | Core framework                   |
+| TypeScript              | ^5         | Type safety                      |
+| NativeWind              | ^4         | Tailwind CSS styling             |
+| React Native Paper      | ^5         | High-quality UI components       |
+| TanStack React Query    | ^5         | Data fetching & caching          |
+| Lucide React Native     | ^1         | Icons                            |
+
+
+## 🏗 Architecture Highlights
+
+- **Senior best practices** followed:
+  - Feature-based folder structure
+  - Separation of concerns (API service, hooks, components)
+  - Centralized query client with smart defaults
+  - Fully type-safe PokeAPI integration
+  - Reusable, testable components
+  - Clean, maintainable, and scalable code
+
+## 📲 Setup Instructions
+
+### 1. Clone the repository
 ```bash
-npm run reset-project
-```
+git clone https://github.com/bekidink/pokemon-expo-app.git
+cd pokemon-expo-app
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+npm install
+npx expo start
+npm run start      # Start Expo dev server
+npm run android    # Run on Android
+npm run ios        # Run on iOS
+npm run web        # Run on web (for quick testing)
+npm test           # Run Jest tests
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
