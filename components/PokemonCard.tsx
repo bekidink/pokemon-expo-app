@@ -19,6 +19,7 @@ export default memo(function PokemonCard({ pokemon }: { pokemon: any }) {
       activeOpacity={0.7}
       onPress={() => router.push(`/pokemon/${pokemon.name}`)} 
       style={styles.cardContainer}
+      accessibilityRole="button"
     >
       <View className="bg-white rounded-2xl p-4 items-center shadow-sm border border-gray-100">
         <Text className="absolute right-3 top-2 text-gray-300 font-bold text-xs">
