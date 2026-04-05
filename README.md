@@ -67,7 +67,35 @@ The UI has been significantly improved beyond the reference mockup for a premium
   - Fully type-safe PokeAPI integration
   - Reusable, testable components
   - Clean, maintainable, and scalable code
-
+pokemon-expo-app/
+├── app/
+│   ├── _layout.tsx              # Root layout + providers
+│   ├── index.tsx                # Pokémon List Screen
+│   └── pokemon/[name].tsx       # Pokémon Detail Screen
+├── components/
+│   ├── PokemonCard.tsx
+│   ├── LoadingSpinner.tsx
+│   └── ErrorState.tsx
+├── hooks/
+│   ├── usePokemonList.ts
+│   └── usePokemonDetail.ts
+├── services/
+│   └── pokeApi.ts
+├── types/
+│   └── pokemon.ts
+├── lib/
+│   └── queryClient.ts
+├── utils/
+│   └── formatters.ts
+├── tests/                       # Basic tests
+│   └── components/PokemonCard.test.tsx
+├── app.json
+├── babel.config.js
+├── tailwind.config.js
+├── tsconfig.json
+├── package.json
+├── README.md
+└── .env.example
 ## 📲 Setup Instructions
 
 ### 1. Clone the repository
